@@ -23,3 +23,21 @@ A_int = np.array([[4, 12, -16],
 R_int = cholesky_factorization(A_int)
 print("Cholesky Factor Integer variable:")
 print(R_int)
+
+print("----------Another float variable example-------------\n")
+
+A_float = np.array([[9, 3, 6],
+                    [3, 25, -7],
+                    [6, -7, 49]], dtype=float)
+R_float = cholesky_factorization(A_float)
+print("Cholesky Factor float variable:")
+print(R_float)
+
+print("----------Another complex variable example-------------\n")
+
+A_complex = np.array([[9 + 4j, 3 - 1j, 6],
+                     [3 - 1j, 25, -7],
+                     [6, -7, 49 + 2j]], dtype=complex)
+R_complex = cholesky_factorization(A_complex)
+print("Cholesky Factor for complex variable:")
+print(R_complex)
